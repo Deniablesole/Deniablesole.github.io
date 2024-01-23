@@ -1,0 +1,43 @@
+body{
+    background-color: lightblue;
+}
+
+h1{
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    margin-top: 1;
+    
+}
+
+header{
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    margin-top: 1;
+
+}
+
+h2{
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    margin-top: 1;
+    padding-top: 20px;
+}
+
+p{
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+
+footer{
+    font-family: 'Lato', sans-serif;
+    text-align:center;
+}
+
+
+  a{
+    color: yellow;
+  }
+
+  a:visited{
+    color: black;
+  }
