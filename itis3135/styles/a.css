@@ -1,0 +1,88 @@
+body{
+    background-color: lightblue;
+}
+
+h1{
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    margin-top: 1;
+    
+}
+
+header{
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    margin-top: 1;
+
+}
+
+h2{
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    margin-top: 1;
+    padding-top: 20px;
+}
+
+p{
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+
+footer{
+    font-family: 'Lato', sans-serif;
+    text-align:center;
+}
+
+
+  a{
+    color: yellow;
+  }
+
+  a:visited{
+    color: black;
+  }
+  
+  h3{
+    text-align: center;
+  }
+
+  main {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+}
+
+form {
+    
+    gap: 10px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+select,
+button {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
