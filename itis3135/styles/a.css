@@ -1,52 +1,52 @@
-body{
+body {
     background-color: lightblue;
 }
 
-h1{
-    font-family: 'Lato', sans-serif;
-    text-align: center;
-    margin-top: 1px;
-    
-}
-
-header{
+h1 {
     font-family: 'Lato', sans-serif;
     text-align: center;
     margin-top: 1px;
 
 }
 
-h2{
+header {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    margin-top: 1px;
+
+}
+
+h2 {
     font-family: 'Lato', sans-serif;
     text-align: center;
     margin-top: 1px;
     padding-top: 20px;
 }
 
-p{
+p {
     font-family: 'Lato', sans-serif;
     text-align: center;
 }
 
-footer{
+footer {
     font-family: 'Lato', sans-serif;
-    text-align:center;
+    text-align: center;
 }
 
 
-  a{
+a {
     color: yellow;
-  }
+}
 
-  a:visited{
+a:visited {
     color: black;
-  }
-  
-  h3{
-    text-align: center;
-  }
+}
 
-  main {
+h3 {
+    text-align: center;
+}
+
+main {
     max-width: 600px;
     margin: 20px auto;
     padding: 20px;
@@ -55,7 +55,7 @@ footer{
 }
 
 form {
-    
+
     gap: 10px;
     justify-content: center;
     margin: 0 auto;
@@ -85,4 +85,3 @@ button {
 button:hover {
     background-color: #555;
 }
-

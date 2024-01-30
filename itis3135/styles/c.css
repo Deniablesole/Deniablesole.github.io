@@ -1,67 +1,67 @@
-body{
+body {
     background-color: lightblue;
 }
 
-h1{
-    font-family: 'Lato', sans-serif;
-    text-align: center;
-    margin-top: 1px;
-    
-}
-
-header{
+h1 {
     font-family: 'Lato', sans-serif;
     text-align: center;
     margin-top: 1px;
 
 }
 
-h2{
+header {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    margin-top: 1px;
+
+}
+
+h2 {
     font-family: 'Lato', sans-serif;
     text-align: center;
     margin-top: 1px;
     padding-top: 20px;
 }
 
-p{
+p {
     font-family: 'Lato', sans-serif;
     text-align: center;
 }
 
-footer{
+footer {
     font-family: 'Lato', sans-serif;
-    text-align:center;
+    text-align: center;
 }
 
 
-  a{
+a {
     color: yellow;
-  }
+}
 
-  a:visited{
+a:visited {
     color: black;
-  }
+}
 
-   ol{
+ol {
     text-align: center;
     list-style-position: inside;
     margin: 0 auto;
-    
-  }
 
-  h3{
+}
+
+h3 {
     text-align: center;
-  }
+}
 
-  table {
-    width: 50%; 
-    margin: 20px auto; 
+table {
+    width: 50%;
+    margin: 20px auto;
     border-collapse: collapse;
-    border: 2px solid black; 
+    border: 2px solid black;
 }
 
 th, td {
-    border: 1px solid black; 
+    border: 1px solid black;
     text-align: left;
     padding: 8px;
 }
@@ -70,14 +70,14 @@ th {
     background-color: white;
 }
 
-figcaption{
+figcaption {
     text-align: center;
     margin: 0 auto;
     justify-content: center;
-    
-  }
 
-  figure {
+}
+
+figure {
     margin: 20px auto;
 }
 
@@ -100,19 +100,16 @@ table.employee-table th {
 
 
 table.employee-table tr:nth-child(odd) {
-    background-color: black; 
+    background-color: black;
     color: white;
 }
 
 table.employee-table tr:nth-child(even) {
-    background-color: #ffffff; 
+    background-color: #ffffff;
 }
 
 
 table.employee-table tr.total-row td {
     font-weight: bold;
-    
+
 }
-
-
-
