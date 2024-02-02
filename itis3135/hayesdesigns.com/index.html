@@ -3,27 +3,123 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Nathaniel Hayes's Nimble Hedgehog || ITIS 3135 Hayes Designs</title>
+        <title>Nathaniel Hayes's Nimble Hedgehog || ITIS 3135 || Hayes
+            Designs</title>
+            <!--https://coolors.co/12100e-89b0ae-f5e5fc-7d6167-6c698d-->
+        <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #12100E; 
+            color: #F5E5FC; 
+            margin: 0;
+            padding: 0;
+        }
 
+        h1{
+            padding-left: 10px;
+        }
+
+        header {
+            background-color: #89B0AE; 
+            padding: 10px;
+        }
+
+        .header-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .company-name {
+            margin-right: 20px;
+            line-height: 1;
+            color: #F5E5FC; 
+        }
+
+        img {
+            max-width: 5%;
+            max-height: 5%;
+        }
+
+        .amazing-list {
+            list-style-type: none;
+            padding: 0;
+            color: #7D6167; 
+        }
+
+        .amazing-list li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        .amazing-list li::before {
+            content: '\2022';
+            color: #6C698D; 
+            font-size: 1.5em;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #89B0AE; 
+            padding: 10px;
+            color: #12100E; 
+            text-align: center;
+        }
+
+        footer a {
+            color: #6C698D; 
+        }
+
+        footer a:link {
+            color: #F5E5FC; 
+        }
+
+        footer a:visited {
+            color: #7D6167; 
+        }
+
+        footer a:hover{
+            color: #6C698D;
+        }
+    </style>
     </head>
     <body>
-        <!--https://coolors.co/06070e-706c61-eddfef-ffe66d-a1e8cc-->
-        <style>
-
-        </style>
         <header>
-            <h1>Hayes Designs</h1>
-            <img src="itis3135\images\companylogo.jpeg" alt="description">
+            <div class="header-container">
+                <img src="images/companylogo.jpeg"
+                    alt="Hayes Designs company logo">
+                <h1 class="company-name">Hayes Designs</h1>
+            </div>
             <div class="horizontal-bar"></div>
         </header>
         <main>
-            <h2>Company Homepage</h2>
-            <p>Welcome to the homepage for Hayes Designs.</p>
+            <h2>Hayes Designs Services</h2>
+            <p>Here at Hayes Designs, we specialize in creating a variety of
+                digital marketing tools and software.</p>
+            <ul class="amazing-list">
+                <li>We deliver innovative and custom marketing solutions.</li>
+                <li>Our team is committed to excellence and creativity.</li>
+                <li>We prioritize customer satisfaction in every project.</li>
+                <li>Hayes Designs has won multiple design awards.</li>
+                <li>Commercial and personal solutions.</li>
+            </ul>
+            <p>We would like to provide customers with the best tools,
+                custom-made for them to achieve their marketing goals.</p>
         </main>
         <footer>
-
-            <p>Where Your Vision Takes Shape Online! © 2024<br></p>
-
+            <p>Contact Us:</p>
+            <p>Email: <a
+                    href="mailto:info@hayesdesigns.com">info@hayesdesigns.com</a></p>
+            <p>Phone: (111)-123-4567</p>
+            <p>Address: 123 Wall Street, New York, NY 10005</p>
+            <p>Where Your Vision Takes Shape Online! © 2024</p>
         </footer>
     </body>
 </html>
