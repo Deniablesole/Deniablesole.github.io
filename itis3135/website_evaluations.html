@@ -3,8 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nathaniel Hayes's Nimble Hedgehog || ITIS 3135 || Forms</title>
-    <link rel="stylesheet" href="styles/a.css">
+    <title>Nathaniel Hayes's Nimble Hedgehog || ITIS 3135 || Website Evaluations</title>
+    <link rel="stylesheet" href="styles/b.css">
+    <style>
+       li {
+      position: relative;
+      padding-left: 20px; 
+      margin-bottom: 10px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li::before {
+      content: "•"; 
+      color: #000; 
+      font-size: 20px; 
+      position: relative;
+      left: 0;
+    }
+      </style>
 </head>
 <body>
     <header>
@@ -24,52 +44,31 @@
         </nav>
         </header>
 <main>
-    <h3>Account Creation Form</h3>
-    <form action="#" method="post" id="businessForm">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required placeholder="Enter your name">
-
-        <br>
-
-        <label for="phone">Phone Number:</label>
-        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="xxx-xxx-xxxx">
-
-        <br>
-
-        <label for="email">Email Address:</label>
-        <input type="email" id="email" name="email" required placeholder="example@example.com">
-
-        <br>
-
-        <label>Account Type:</label>
-        <input type="checkbox" id="option1" name="checkbox_options" value="option1">
-        <label for="option1">Customer</label>
-        <input type="checkbox" id="option2" name="checkbox_options" value="option2">
-        <label for="option2">Employee</label>
-
-        <br>
-
-        <label>Opt in for news emails:</label>
-        <input type="radio" id="radio1" name="radio_options" value="radio1">
-        <label for="radio1">Yes</label>
-        <input type="radio" id="radio2" name="radio_options" value="radio2">
-        <label for="radio2">No</label>
-
-        <br>
-
-        <label for="dropdown">How did you hear about us?:</label>
-        <select id="dropdown" name="select_option">
-            <option value="default">Select</option>
-            <option value="option1">Social Media</option>
-            <option value="option2">Friend</option>
-            <option value="option3">Other</option>
-        </select>
-
-        <br>
-
-        <button type="reset">Reset</button>
-        <button type="submit">Submit</button>
-    </form>
+    <h2>Website Evaluations</h2>
+    <section>
+        <h3><a href="http://www.amazon.com">Amazon</a></h3>
+        <p>Largest e-commerce website allowing you to get almost anything delivered to your home.</p>
+        <p>CRAP Principles</p>
+        <ul>
+            <li>Contrast</li>
+            <li>Repetition</li>
+            <li>Alignment</li>
+            <li>Proximity</li>
+        </ul>
+        <p>This website follows all of the CRAP principles. The contrast is well done, everything is aligned, products of a similar category are grouped together which follows repetition and proximity.</p>
+        </section>
+        <section>
+            <h3><a href="http://web.archive.org/web/20041204042147/http://www.panix.com/~clays/biff/">Panix</a></h3>
+            <p>This is someone's personal website I found made in 2004.</p>
+            <p>CRAP Principles</p>
+            <ul>
+                <li>Contrast</li>
+                <li>Repetition</li>
+                <li>Alignment</li>
+                <li>Proximity</li>
+            </ul>
+            <p>This website follows none of the CRAP principles. The contrast is bad making the website hard to read. There is no repetition on the page. Everything is not aligned, except half the page is left justified. Also the proximity is not good.</p>
+        </section>
 </main>
 <footer>
     <a href="https://webpages.charlotte.edu/nhayes12/">Charlotte.edu</a>
