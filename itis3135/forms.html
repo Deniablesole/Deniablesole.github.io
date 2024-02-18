@@ -1,106 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nathaniel Hayes's Nimble Hedgehog || ITIS 3135 || Forms</title>
-    <link rel="stylesheet" href="styles/a.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles/a.css" />
+  </head>
+  <body>
     <header>
-        <h1>Nathaniel Hayes's Nimble Hedgehog || ITIS 3135</h1>
-        <nav>
-            <a href="./">Home</a>
-            ||
-            <a href="introduction.html">Introduction</a>
-            ||
-            <a href="contract.html">Contract</a>
-            ||
-            <a href="tables.html">Tables</a>
-            ||
-            <a href="forms.html">Form</a>
-            ||
-            <a href="website_evaluations.html">Website Evaluations</a>
-        </nav>
-        <nav>
-            <a href="stuff/CRAPPY%20WEBSITE!.htm">CRAPPY Website</a>
-        </nav>
-        </header>
-<main>
-    <h3>Account Creation Form</h3>
-    <form action="#" method="post" id="businessForm">
+      <h1>Nathaniel Hayes's Nimble Hedgehog || ITIS 3135</h1>
+      <nav>
+        <a href="./">Home</a>
+        ||
+        <a href="introduction.html">Introduction</a>
+        ||
+        <a href="contract.html">Contract</a>
+        ||
+        <a href="tables.html">Tables</a>
+        ||
+        <a href="forms.html">Form</a>
+        ||
+        <a href="website_evaluations.html">Website Evaluations</a>
+      </nav>
+      <nav>
+        <a href="stuff/CRAPPY%20WEBSITE!.htm">CRAPPY Website</a>
+      </nav>
+    </header>
+    <main>
+      <h3>Account Creation Form</h3>
+      <form action="#" method="post" id="businessForm">
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required placeholder="Enter your name">
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          placeholder="Enter your name"
+        />
 
-        <br>
+        <br />
 
         <label for="phone">Phone Number:</label>
-        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="xxx-xxx-xxxx">
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+          placeholder="xxx-xxx-xxxx"
+        />
 
-        <br>
+        <br />
 
         <label for="email">Email Address:</label>
-        <input type="email" id="email" name="email" required placeholder="example@example.com">
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          placeholder="example@example.com"
+        />
 
-        <br>
+        <br />
 
         <label>Account Type:</label>
-        <input type="checkbox" id="option1" name="checkbox_options" value="option1">
+        <input
+          type="checkbox"
+          id="option1"
+          name="checkbox_options"
+          value="option1"
+        />
         <label for="option1">Customer</label>
-        <input type="checkbox" id="option2" name="checkbox_options" value="option2">
+        <input
+          type="checkbox"
+          id="option2"
+          name="checkbox_options"
+          value="option2"
+        />
         <label for="option2">Employee</label>
 
-        <br>
+        <br />
 
         <label>Opt in for news emails:</label>
-        <input type="radio" id="radio1" name="radio_options" value="radio1">
+        <input type="radio" id="radio1" name="radio_options" value="radio1" />
         <label for="radio1">Yes</label>
-        <input type="radio" id="radio2" name="radio_options" value="radio2">
+        <input type="radio" id="radio2" name="radio_options" value="radio2" />
         <label for="radio2">No</label>
 
-        <br>
+        <br />
 
         <label for="dropdown">How did you hear about us?:</label>
         <select id="dropdown" name="select_option">
-            <option value="default">Select</option>
-            <option value="option1">Social Media</option>
-            <option value="option2">Friend</option>
-            <option value="option3">Other</option>
+          <option value="default">Select</option>
+          <option value="option1">Social Media</option>
+          <option value="option2">Friend</option>
+          <option value="option3">Other</option>
         </select>
 
-        <br>
+        <br />
 
         <button type="reset">Reset</button>
         <button type="submit">Submit</button>
-    </form>
-</main>
-<footer>
-    <a href="https://webpages.charlotte.edu/nhayes12/">Charlotte.edu</a>
-    ||
-    <a href="https://github.com/deniablesole/deniablesole.github.io">GitHub</a>
-    ||
-    <a href="https://deniablesole.github.io/">GitHub.io</a>
-    ||
-    <a href="https://github.com/Deniablesole/Deniablesole.github.io/tree/main/itis3135">itis3135.io</a>
-    ||
-    <a href="https://www.freecodecamp.org/NathanielHayes">FreeCodeCamp</a>
-    ||
-    <a href="https://www.codecademy.com/profiles/NathanielHayes">CodeAcademy</a>
-    ||
-    <a href="https://www.linkedin.com/in/nathanielhayes23/">LinkedIn<br></a>
-    <p>Designed by: <a href="hayesdesigns.com/index.html">Hayes Designs</a> © 2024<br></p>
-    <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
-        <img style="border:0;width:88px;height:31px" src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!">
-       </a>
-       <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css">
-        <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
-         </a>
-       
-       <script>
-          document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
-               document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
-       </script>
-       
-</footer>
-</body>
+      </form>
+    </main>
+    <footer>
+      <a href="https://webpages.charlotte.edu/nhayes12/">Charlotte.edu</a>
+      ||
+      <a href="https://github.com/deniablesole/deniablesole.github.io"
+        >GitHub</a
+      >
+      ||
+      <a href="https://deniablesole.github.io/">GitHub.io</a>
+      ||
+      <a
+        href="https://github.com/Deniablesole/Deniablesole.github.io/tree/main/itis3135"
+        >itis3135.io</a
+      >
+      ||
+      <a href="https://www.freecodecamp.org/NathanielHayes">FreeCodeCamp</a>
+      ||
+      <a href="https://www.codecademy.com/profiles/NathanielHayes"
+        >CodeAcademy</a
+      >
+      ||
+      <a href="https://www.linkedin.com/in/nathanielhayes23/">LinkedIn<br /></a>
+      <p>
+        Designed by: <a href="hayesdesigns.com/index.html">Hayes Designs</a>,
+        <a
+          href="https://www.freecodecamp.org/certification/NathanielHayes/responsive-web-design"
+          >Certified in RWD</a
+        >
+        © 2024<br />
+      </p>
+      <a
+        href="https://validator.w3.org/check?uri=referer"
+        id="validation_link_html"
+      >
+        <img
+          style="border: 0; width: 88px; height: 31px"
+          src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png"
+          alt="Valid HTML!"
+        />
+      </a>
+      <a
+        href="https://jigsaw.w3.org/css-validator/check/referer"
+        id="validation_link_css"
+      >
+        <img
+          style="border: 0; width: 88px; height: 31px"
+          src="https://jigsaw.w3.org/css-validator/images/vcss"
+          alt="Valid CSS!"
+        />
+      </a>
+
+      <script>
+        document
+          .getElementById("validation_link_html")
+          .setAttribute(
+            "href",
+            "https://validator.w3.org/check?uri=" + location.href
+          );
+        document
+          .getElementById("validation_link_css")
+          .setAttribute(
+            "href",
+            "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href
+          );
+      </script>
+    </footer>
+  </body>
 </html>
