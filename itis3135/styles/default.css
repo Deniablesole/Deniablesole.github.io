@@ -1,30 +1,20 @@
 body {
     background-color: lightblue;
+    margin: 0; 
+    padding: 0;
 }
 
-h1 {
+h1, header, h2, h3 {
     font-family: 'Lato', sans-serif;
     text-align: center;
     margin-top: 1px;
-
-}
-
-header {
-    font-family: 'Lato', sans-serif;
-    text-align: center;
-    margin-top: 1px;
-
 }
 
 h2 {
-    font-family: 'Lato', sans-serif;
-    text-align: center;
-    margin-top: 1px;
     padding-top: 20px;
 }
 
-p {
-
+p, ul {
     text-align: center;
 }
 
@@ -33,7 +23,6 @@ footer {
     text-align: center;
 }
 
-
 a {
     color: yellow;
 }
@@ -41,10 +30,6 @@ a {
 a:visited {
     color: black;
 }
-
-
-
-
 
 .italic-text {
     font-style: italic;
@@ -56,7 +41,6 @@ a:visited {
     max-height: 400px;
     display: block;
     margin: 0 auto;
-
 }
 
 figcaption {
@@ -65,12 +49,30 @@ figcaption {
     font-style: italic;
 }
 
-h3 {
-    text-align: center;
-    font-family: 'Lato', sans-serif;
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 90%;
 }
 
-ul {
-    text-align: center;
-    margin: 1px;
+
+/*Laptops / Small Screens View*/
+@media screen and (min-width: 981px) and (max-width: 1400px) {
+    main {
+        width: 80%; 
+    }
+}
+
+/*Tablet Devices View*/
+@media screen and (min-width: 601px) and (max-width: 980px) {
+    main {
+        width: 70%; 
+    }
+}
+
+/*Mobile Devices View*/
+@media screen and (min-width: 370px) and (max-width: 600px) {
+    main {
+        width: 90%;
+    }
 }
