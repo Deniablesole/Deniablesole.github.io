@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nathaniel Hayes's Nimble Hedgehog || ITIS 3135 || BYO Intro</title>
+    <link rel="stylesheet" href="styles/default.css" />
+</head>
+<body>
+
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+
+    <main>
+        <form id="surveyForm" class="custom-form" onsubmit="submitForm(event)">
+            <h2>BYO Intro</h2>
+
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required>
+
+            <label for="mascot">Mascot</label>
+            <input type="text" name="mascot" id="mascot" required>
+
+            <label>Add your image</label>
+        <input type="file" name="file" id="introImage" required>
+        <button type="button" onclick="loadImage()">Click here to load</button>
+
+        <div id="loadImage">
+
+        </div>
+
+            <label for="imageCaption">Image Caption</label>
+            <input type="text" name="imageCaption" id="imageCaption" required>
+
+            <label for="personalBackground">Personal Background</label>
+            <textarea name="personalBackground" id="personalBackground" required></textarea>
+
+            <label for="professionalBackground">Professional Background</label>
+            <textarea name="professionalBackground" id="professionalBackground" required></textarea>
+
+            <label for="academicBackground">Academic Background</label>
+            <textarea name="academicBackground" id="academicBackground" required></textarea>
+
+            <label for="webDevelopmentBackground">Background in Web Development</label>
+            <textarea name="webDevelopmentBackground" id="webDevelopmentBackground" required></textarea>
+
+            <label for="primaryComputerPlatform">Primary Computer Platform</label>
+            <input type="text" name="primaryComputerPlatform" id="primaryComputerPlatform" required>
+
+            <div id="courseEntries">
+                <!-- Courses currently taking -->
+                <label for="courseTitle">Course Title</label>
+                <input type="text" name="courseTitle" id="courseTitle" class="courseTitle" required>
+                
+                <label for="courseDescription">Course Description</label>
+                <textarea name="courseDescription" id="courseDescription" class="courseDescription" required></textarea>
+
+                <button type="button" onclick="addCourse()">Add Course</button>
+
+                <ul id="currentCoursesList"></ul>
+            </div>
+
+            <label for="funnyThing">Funny thing?</label>
+            <input type="text" name="funnyThing" id="funnyThing" required>
+
+            <label for="anythingElse">Anything else?</label>
+            <textarea name="anythingElse" id="anythingElse" required></textarea>
+
+            <label for="agree">I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available.</label>
+            <input type="checkbox" name="agree" id="agree" required>
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset" onclick="resetForm()">
+        </form>
+
+        <div id="formResults"></div>
+        
+    </main>
+
+    <footer>
+        <div data-include="components/footer.html"></div>
+      </footer>
+      <script>
+         
+        
+          if (validationLinkHtml) {
+            validationLinkHtml.setAttribute(
+              "href",
+              "https://validator.w3.org/check?uri=" + location.href
+            );
+          }
+        
+          if (validationLinkCss) {
+            validationLinkCss.setAttribute(
+              "href",
+              "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href
+            );
+          }
+        </script>
+      <script src="scripts/HTMLInclude.min.js"></script>
+      <script src="scripts/survey.js"></script>
+    </html>
