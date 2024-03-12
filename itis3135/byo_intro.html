@@ -1,87 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nathaniel Hayes's Nimble Hedgehog || ITIS 3135 || BYO Intro</title>
     <link rel="stylesheet" href="styles/default.css" />
-</head>
-<body>
+  </head>
+  <style>
+ body {
+            font-family: Arial, sans-serif;
+            background-color: lightblue;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
 
-    <header>
-        <div data-include="components/header.html"></div>
-    </header>
+        #container {
+            max-width: 600px;
+            width: 100%;
+            margin: 20px;
+            box-sizing: border-box;
+        }
 
-    <main>
-        <form id="surveyForm" class="custom-form" onsubmit="submitForm(event)">
-            <h2>BYO Intro</h2>
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
 
-            <label for="name">Name</label>
-            <input type="text" name="name" id="name" required>
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
 
-            <label for="mascot">Mascot</label>
-            <input type="text" name="mascot" id="mascot" required>
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
 
-            <label>Add your image</label>
-        <input type="file" name="file" id="introImage" required>
-        <button type="button" onclick="loadImage()">Click here to load</button>
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
 
-        <div id="loadImage">
+        button {
+            padding: 10px;
+            background-color: lightblue;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
 
-        </div>
-
-            <label for="imageCaption">Image Caption</label>
-            <input type="text" name="imageCaption" id="imageCaption" required>
-
-            <label for="personalBackground">Personal Background</label>
-            <textarea name="personalBackground" id="personalBackground" required></textarea>
-
-            <label for="professionalBackground">Professional Background</label>
-            <textarea name="professionalBackground" id="professionalBackground" required></textarea>
-
-            <label for="academicBackground">Academic Background</label>
-            <textarea name="academicBackground" id="academicBackground" required></textarea>
-
-            <label for="webDevelopmentBackground">Background in Web Development</label>
-            <textarea name="webDevelopmentBackground" id="webDevelopmentBackground" required></textarea>
-
-            <label for="primaryComputerPlatform">Primary Computer Platform</label>
-            <input type="text" name="primaryComputerPlatform" id="primaryComputerPlatform" required>
-
-            <div id="courseEntries">
-                <!-- Courses currently taking -->
-                <label for="courseTitle">Course Title</label>
-                <input type="text" name="courseTitle" id="courseTitle" class="courseTitle" required>
-                
-                <label for="courseDescription">Course Description</label>
-                <textarea name="courseDescription" id="courseDescription" class="courseDescription" required></textarea>
-
-                <button type="button" onclick="addCourse()">Add Course</button>
-
-                <ul id="currentCoursesList"></ul>
-            </div>
-
-            <label for="funnyThing">Funny thing?</label>
-            <input type="text" name="funnyThing" id="funnyThing" required>
-
-            <label for="anythingElse">Anything else?</label>
-            <textarea name="anythingElse" id="anythingElse" required></textarea>
-
-            <label for="agree">I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available.</label>
-            <input type="checkbox" name="agree" id="agree" required>
-
-            <input type="submit" value="Submit">
-            <input type="reset" value="Reset" onclick="resetForm()">
-        </form>
-
-        <div id="formResults"></div>
         
-    </main>
 
-    <footer>
-        <div data-include="components/footer.html"></div>
-      </footer>
-      <script>
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        #formResults {
+            display: none;
+            margin-top: 20px;
+        }
+
+        footer {
+            margin-top: 20px;
+        }
+</style>
+
+  <header>
+    <div data-include="components/header.html"></div>
+  </header>
+
+  <main>
+    <body>
+
+      <form id="myForm" onsubmit="submitForm(event)">
+          <h2>Form Example</h2>
+  
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" required>
+  
+          <label for="mascot">Mascot</label>
+          <input type="text" name="mascot" id="mascot" required>
+  
+          <label for="image">Image (PNG or JPG)</label>
+          <input type="file" name="image" id="image" accept=".png, .jpg, .jpeg" required>
+  
+          <label for="imageCaption">Image Caption</label>
+          <input type="text" name="imageCaption" id="imageCaption" required>
+  
+          <label for="personalBackground">Personal Background</label>
+          <textarea name="personalBackground" id="personalBackground" required></textarea>
+  
+          <label for="professionalBackground">Professional Background</label>
+          <textarea name="professionalBackground" id="professionalBackground" required></textarea>
+  
+          <label for="academicBackground">Academic Background</label>
+          <textarea name="academicBackground" id="academicBackground" required></textarea>
+  
+          <label for="webDevelopmentBackground">Background in Web Development</label>
+          <textarea name="webDevelopmentBackground" id="webDevelopmentBackground" required></textarea>
+  
+          <label for="primaryComputerPlatform">Primary Computer Platform</label>
+          <input type="text" name="primaryComputerPlatform" id="primaryComputerPlatform" required>
+  
+          <div id="courseEntries">
+              <label for="courseTitle">Courses currently taking</label>
+              <button type="button" onclick="addCourse()">Add Course</button>
+  
+              <ul id="currentCoursesList"></ul>
+          </div>
+  
+          <label for="funnyThing">Funny thing?</label>
+          <input type="text" name="funnyThing" id="funnyThing" required>
+  
+          <label for="anythingElse">Anything else?</label>
+          <textarea name="anythingElse" id="anythingElse" required></textarea>
+  
+          <label>
+              <input type="checkbox" name="agree" id="agree" required>
+              I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available.
+          </label>
+  
+          <input type="submit" value="Submit">
+          <input type="reset" value="Reset">
+      </form>
+  
+      <div id="formResults"></div>
+  </main>
+
+  <footer>
+    <div data-include="components/footer.html"></div>
+  </footer>
+  <script>
          
         
           if (validationLinkHtml) {
@@ -98,6 +172,6 @@
             );
           }
         </script>
-      <script src="scripts/HTMLInclude.min.js"></script>
-      <script src="scripts/survey.js"></script>
-    </html>
+  <script src="scripts/HTMLInclude.min.js"></script>
+  <script src="scripts/survey.js"></script>
+</html>
