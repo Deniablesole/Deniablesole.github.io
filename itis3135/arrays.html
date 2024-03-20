@@ -1,48 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nathaniel Hayes's Nimble Hedgehog || ITIS 3135 || Arrays</title>
-    <link rel="stylesheet" href="styles/default.css" />
-  </head>
-  <body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Nathaniel Hayes's Nimble Hedgehog || ITIS 3135 || Arrays</title>
+        <link rel="stylesheet" href="styles/default.css" />
+    </head>
     <header>
-      <div data-include="components/header.html"></div>
+        <div data-include="components/header.html"></div>
     </header>
+    <body>
     <main>
-      <h2>Arrays</h2>
-      <body>
-        <label for="personName">Person's Name:</label>
-        <input type="text" id="personName"><br><br>
-        <label for="personSalary">Person's Salary:</label>
-        <input type="text" id="personSalary"><br><br>
-        <button id="addSalaryBtn">Add Salary</button>
-        <button id="modifySalaryBtn">Modify Salary</button>
-        <button id="displayResultsBtn">Display Results</button>
-        <button id="displaySalaryBtn">Display Salary</button>
-        
-        <select id="selectEmployee">
-            <!-- Populate options dynamically using JavaScript -->
-        </select><br><br>
-        <label for="newSalary">New Salary:</label>
-        <input type="text" id="newSalary"><br><br>
-        <button id="modifySalaryBtn">Modify Salary</button>
-        <button id="displayResultsBtn">Display Results</button>
-        
-        <div id="results"></div>
-        
-        <table id="results_table" border="1">
-            <!-- Table content will be dynamically added by JavaScript -->
-        </table>
-    
-        
-    </main>
-    <footer>
-      <div data-include="components/footer.html"></div>
-    </footer>
-    <script src="arrays.js"></script>
-    <script>
+        <h2>Arrays</h2>
+            <label for="personName">Person's Name:</label>
+            <input type="text" id="personName"><br><br>
+            <label for="personSalary">Person's Salary:</label>
+            <input type="text" id="personSalary"><br><br>
+            <button id="addSalaryBtn">Add Salary</button>
+            <button id="modifySalaryBtn">Modify Salary</button>
+            <button id="displayResultsBtn">Display Results</button>
+            <button id="displaySalaryBtn">Display Salary</button>
+
+            <select id="selectEmployee">
+                <!-- Populate options dynamically using JavaScript -->
+            </select><br><br>
+            <label for="newSalary">New Salary:</label>
+            <input type="text" id="newSalary"><br><br>
+            <button id="modifySalarySubmitBtn">Submit</button>
+            <button id="displayResultsBtn2">Display Results</button>
+
+            <div id="results"></div>
+
+            <table id="results_table" border="1">
+                <!-- Table content will be dynamically added by JavaScript -->
+            </table>
+
+        </main>
+        <footer>
+            <div data-include="components/footer.html"></div>
+        </footer>
+        <script src="arrays.js"></script>
+        <script>
      
     
       if (validationLinkHtml) {
@@ -59,7 +57,7 @@
         );
       }
     </script>
-    <script src="scripts/HTMLInclude.min.js"></script>
-  </body>
+        <script src="scripts/HTMLInclude.min.js"></script>
+    </body>
 
 </html>
