@@ -74,7 +74,7 @@ main section:not(:first-child) {
     display: block;
 }
 
-#img1{
+img{
     margin: auto;
     max-width: 450px;
     max-height: 450px;
@@ -83,7 +83,21 @@ main section:not(:first-child) {
     color: #76ABAE;
 }
 
-#content {
+figcaption{
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    color: #76ABAE;
+}
+
+.caption{
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    color: #76ABAE;
+}
+
+p {
     width: 80%; /* Set the width of the content */
     margin: 0 auto; /* Center the content horizontally */
     font-family: Arial, sans-serif; /* Example font family */
@@ -104,7 +118,7 @@ main section:not(:first-child) {
   }
 
   h1{
-    color: #76ABAE
+    color: #76ABAE;
     font-family: Arial, sans-serif;
   }
 
@@ -153,12 +167,12 @@ main section:not(:first-child) {
             <section id="about-skateboarding">
                 <h2>About Skateboarding/Home</h2>
                 <figure>
-                    <img src="images\skateboardweb4.png" alt="Hobby Figure 1"
+                    <img src="images/skateboardweb4.png" alt="Hobby Figure 1"
                         id="img1">
-                    <figcaption id="img1">Skateboarder doing trick.</figcaption>
+                    <figcaption>Skateboarder doing trick.</figcaption>
                 </figure>
                 <p
-                    id="img1"><em>"Prompt:Generate an image of a skateboarder doing a cool trick."</em></p>
+                    class="caption"><em>"Prompt:Generate an image of a skateboarder doing a cool trick."</em></p>
                 <p><br></p>
                 <h3>What is Skateboarding?</h3>
                 <p><br></p>
@@ -169,27 +183,25 @@ main section:not(:first-child) {
                     and griptape which allow you to ride it.</p>
                 <p><br></p>
                 <figure>
-                    <img src="images\skateboardweb5.png" alt="Hobby Figure 1"
-                        id="img1">
-                    <figcaption id="img1">Man standing on
+                    <img src="images/skateboardweb5.png" alt="img1">
+                    <figcaption>Man standing on
                         skateboard.</figcaption>
                 </figure>
                 <p
-                    id="img1"><em>"Prompt:Generate an image of a skateboarder."</em></p>
+                    class="caption"><em>"Prompt:Generate an image of a skateboarder."</em></p>
 
             </section>
 
             <section id="when">
                 <h2>When To Skateboard</h2>
                 <figure>
-                    <img src="images\skateboardweb2.jpg" alt="Hobby Figure 1"
-                        id="img1">
-                    <figcaption id="img1">Skateboarder doing trick.</figcaption>
+                    <img src="images/skateboardweb2.jpg" alt="img2">
+                    <figcaption>Skateboarder doing trick.</figcaption>
                 </figure>
                 <p
-                    id="img1"><em>"Prompt:Generate an image of skateboarders."</em></p>
+                    class="caption"><em>"Prompt:Generate an image of skateboarders."</em></p>
                 <p><br></p>
-                <p id="content">The best time to skate is any time, except for
+                <p>The best time to skate is any time, except for
                     when there is heavy rain. The only way to get better at
                     skateboarding is to ride it. More time spent riding your
                     skateboard equals you being better at riding your
@@ -198,7 +210,7 @@ main section:not(:first-child) {
                     others tends to be more fun it is perpectly normal to skate
                     alone.</p>
                 <p><br></p>
-                <p id="content">Some people may feel that they are too young/old
+                <p>Some people may feel that they are too young/old
                     or some other excuse to not start skating, but there is no
                     wrong time to start skating. You can find stories of many
                     people online who starting skateboarding in their 30s and
@@ -210,164 +222,158 @@ main section:not(:first-child) {
                 <h2>Where To Skateboard</h2>
                 <!-- Content for "When" section goes here -->
                 <figure>
-                    <img src="images\skateboardweb3.jpg" alt="Hobby Figure 1"
-                        id="img1">
-                    <figcaption id="img1">Group of skateboarders at skate
-                        park.<figcaption>
-                        </figure>
-                        <p
-                            id="img1"><em>"Prompt:Generate an image of skateboarders."</em></p>
-                        <p><br></p>
-                        <p id="content">The safest places to skate are skate
-                            parks and normal parks. At skate parks you have the
-                            potiential of meeting other skaters who you can
-                            learn from and make friends with. Normal parks are
-                            also good places to skate when starting out. All you
-                            need in the beginning is a small patch of asphault
-                            or concrete.</p>
-                        <p><br></p>
-                        <p id="content">Other skaters prefer to skate on the
-                            street or what's known as "Street Skating". This
-                            involves skating down normal street roads. Street
-                            skating is more dangerous than skating in a park
-                            because you have the natural dangers of being on the
-                            street, but also the obstacles you are trying to
-                            skate over are not made with skating in mind. Also
-                            you run the risk of getting involved with law
-                            enforcement as some places do not allow skaters on
-                            their property. </p>
-                    </section>
+                    <img src="images/skateboardweb3.jpg" alt="img3">
+                    <figcaption>Group of skateboarders at skate
+                        park.</figcaption>
+                </figure>
+                <p
+                    class="caption"><em>"Prompt:Generate an image of skateboarders."</em></p>
+                <p><br></p>
+                <p>The safest places to skate are skate
+                    parks and normal parks. At skate parks you have the
+                    potiential of meeting other skaters who you can
+                    learn from and make friends with. Normal parks are
+                    also good places to skate when starting out. All you
+                    need in the beginning is a small patch of asphault
+                    or concrete.</p>
+                <p><br></p>
+                <p>Other skaters prefer to skate on the
+                    street or what's known as "Street Skating". This
+                    involves skating down normal street roads. Street
+                    skating is more dangerous than skating in a park
+                    because you have the natural dangers of being on the
+                    street, but also the obstacles you are trying to
+                    skate over are not made with skating in mind. Also
+                    you run the risk of getting involved with law
+                    enforcement as some places do not allow skaters on
+                    their property. </p>
+            </section>
 
-                    <section id="how">
-                        <h2>How To Skateboard</h2>
-                        <!-- Content for "Where" section goes here -->
-                        <figure>
-                            <img src="images\skateboardweb1.jpg"
-                                alt="Hobby Figure 1" id="img1">
-                            <figcaption id="img1">Two skateboarders at a skate
-                                park.<figcaption>
-                                </figure>
-                                <p
-                                    id="img1"><em>"Prompt:Generate an image of skateboarders."</em></p>
-                                <p><br></p>
-                                <p id="content">To ride a skateboard put your
-                                    front foot on the skateboard over or
-                                    slightly behind the front bolts, make sure
-                                    too point your foot straight or at a slight
-                                    angle. Then push the ground with your
-                                    opposite foot to propel you forward on the
-                                    board. After pushing place your back foot on
-                                    the board and get into riding stance. You
-                                    can then lean forward and backward to
-                                    turn.</p>
-                                <p><br></p>
-                                <p id="content">This is a very simple
-                                    explanation of how to ride a skateboard. I
-                                    would reccomend going online and trying to
-                                    find some videos or articles talking about
-                                    the basics of skateboarding to give you some
-                                    more help. It can make learning how to ride
-                                    skateboards a lot easier if you can see
-                                    someone do it. If you have any friends that
-                                    skate ask them to go ride with you and ask
-                                    for tips.</p>
-                            </section>
+            <section id="how">
+                <h2>How To Skateboard</h2>
+                <!-- Content for "Where" section goes here -->
+                <figure>
+                    <img src="images/skateboardweb1.jpg" alt="img4">
+                    <figcaption>Two skateboarders at a skate
+                        park.</figcaption>
+                </figure>
+                <p
+                    class="caption"><em>"Prompt:Generate an image of skateboarders."</em></p>
+                <p><br></p>
+                <p>To ride a skateboard put your
+                    front foot on the skateboard over or
+                    slightly behind the front bolts, make sure
+                    too point your foot straight or at a slight
+                    angle. Then push the ground with your
+                    opposite foot to propel you forward on the
+                    board. After pushing place your back foot on
+                    the board and get into riding stance. You
+                    can then lean forward and backward to
+                    turn.</p>
+                <p><br></p>
+                <p>This is a very simple
+                    explanation of how to ride a skateboard. I
+                    would reccomend going online and trying to
+                    find some videos or articles talking about
+                    the basics of skateboarding to give you some
+                    more help. It can make learning how to ride
+                    skateboards a lot easier if you can see
+                    someone do it. If you have any friends that
+                    skate ask them to go ride with you and ask
+                    for tips.</p>
+            </section>
 
-                            <section id="why">
-                                <h2>Why You Should Skateboard</h2>
-                                <!-- Content for "How" section goes here -->
-                                <figure>
-                                    <img src="images\skateboardweb6.jpg"
-                                        alt="Hobby Figure 1" id="img1">
-                                    <figcaption id="img1">Guy on
-                                        skateboard.<figcaption>
-                                        </figure>
-                                        <p
-                                            id="img1"><em>"Prompt:Generate a realistic image of a skateboarder."</em></p>
-                                        <p><br></p>
-                                        <p id="content">Skateboarding is a fun
-                                            and unique way to get around.
-                                            Skating can also be a fun hobby to
-                                            do at the park. It is the same as
-                                            enjoying riding motorcycles or
-                                            driving muscle cars. If skating
-                                            looks fun to you then give it a try.
-                                            It could be something that you grow
-                                            to really enjoy. </p>
-                                        <p><br></p>
-                                        <p id="content">Don't worry about
-                                            looking like a beginner. Everyone
-                                            didn't know how to skate when they
-                                            first started. It can be hard and
-                                            you will be tempted to stop, but if
-                                            skating is something you enjoy then
-                                            you will stick with it and get
-                                            better over time.</p>
-                                    </section>
+            <section id="why">
+                <h2>Why You Should Skateboard</h2>
+                <!-- Content for "How" section goes here -->
+                <figure>
+                    <img src="images/skateboardweb6.jpg" alt="img5">
+                    <figcaption>Guy on
+                        skateboard.</figcaption>
+                </figure>
+                <p
+                    class="caption"><em>"Prompt:Generate a realistic image of a skateboarder."</em></p>
+                <p><br></p>
+                <p>Skateboarding is a fun
+                    and unique way to get around.
+                    Skating can also be a fun hobby to
+                    do at the park. It is the same as
+                    enjoying riding motorcycles or
+                    driving muscle cars. If skating
+                    looks fun to you then give it a try.
+                    It could be something that you grow
+                    to really enjoy. </p>
+                <p><br></p>
+                <p>Don't worry about
+                    looking like a beginner. Everyone
+                    didn't know how to skate when they
+                    first started. It can be hard and
+                    you will be tempted to stop, but if
+                    skating is something you enjoy then
+                    you will stick with it and get
+                    better over time.</p>
+            </section>
 
-                                    <section id="about-me">
-                                        <h2>About Me</h2>
-                                        <!-- Content for "Why" section goes here -->
-                                        <figure>
-                                            <img src="images\IMG_5146.jpeg"
-                                                alt="Hobby Figure 1" id="img1">
-                                            <figcaption id="img1">Picture of
-                                                me.</figcaption>
-                                        </figure>
-                                        <p><br></p>
-                                        <p id="content">My name is Nathaniel
-                                            Hayes and I am the creator of this
-                                            website. This website was made for
-                                            an assignment in my web app design
-                                            and development class. The
-                                            assignment was to make a multi-paged
-                                            website using a single html file.
-                                            The topic for the website is any
-                                            hobby or actvity I find interesting.
-                                            I recently picked up skateboarding
-                                            as a hobby, so I chose that to be
-                                            the theme of this website.</p>
-                                        <p><br></p>
-                                        <p id="content">I recently got my first
-                                            skateboard. I have been learning
-                                            with one of my friends and it has
-                                            been a cool experience so far. While
-                                            I am still very new to this I am
-                                            enjoying skateboarding and the
-                                            challenges it poses. I would
-                                            reccomend anyone that is courious
-                                            about skateboarding to give it a
-                                            try.</p>
-                                    </section>
-                                </main>
+            <section id="about-me">
+                <h2>About Me</h2>
+                <!-- Content for "Why" section goes here -->
+                <figure>
+                    <img src="images/IMG_5146.jpeg" alt="img6">
+                    <figcaption>Picture of
+                        me.</figcaption>
+                </figure>
+                <p><br></p>
+                <p>My name is Nathaniel
+                    Hayes and I am the creator of this
+                    website. This website was made for
+                    an assignment in my web app design
+                    and development class. The
+                    assignment was to make a multi-paged
+                    website using a single html file.
+                    The topic for the website is any
+                    hobby or actvity I find interesting.
+                    I recently picked up skateboarding
+                    as a hobby, so I chose that to be
+                    the theme of this website.</p>
+                <p><br></p>
+                <p>I recently got my first
+                    skateboard. I have been learning
+                    with one of my friends and it has
+                    been a cool experience so far. While
+                    I am still very new to this I am
+                    enjoying skateboarding and the
+                    challenges it poses. I would
+                    reccomend anyone that is courious
+                    about skateboarding to give it a
+                    try.</p>
+            </section>
+        </main>
 
-                                <footer>
-                                    <a
-                                        href="https://validator.w3.org/check?uri=referer"
-                                        id="validation_link_html">
-                                        <img
-                                            style="border: 0; width: 88px; height: 31px"
-                                            src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png"
-                                            alt="Valid HTML!" />
-                                    </a>
-                                    <a
-                                        href="https://jigsaw.w3.org/css-validator/check/referer"
-                                        id="validation_link_css">
-                                        <img
-                                            style="border: 0; width: 88px; height: 31px"
-                                            src="https://jigsaw.w3.org/css-validator/images/vcss"
-                                            alt="Valid CSS!" />
-                                    </a>
-                                    <a
-                                        href="https://wave.webaim.org/report#/webpages.charlotte.edu/nhayes12"
-                                        id="validation_link_css">
-                                        <img
-                                            style="border: 0; width: 88px; height: 31px"
-                                            src="w3c.png" alt="WCAG"
-                                            alt="Valid CSS!" />
-                                    </a>
-                                </footer>
-                                <script>
+        <footer>
+            <a
+                href="https://validator.w3.org/check?uri=referer"
+                id="validation_link_html">
+                <img
+                    style="border: 0; width: 88px; height: 31px"
+                    src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png"
+                    alt="Valid HTML!" />
+            </a>
+            <a
+                href="https://jigsaw.w3.org/css-validator/check/referer"
+                id="validation_link_css">
+                <img
+                    style="border: 0; width: 88px; height: 31px"
+                    src="https://jigsaw.w3.org/css-validator/images/vcss"
+                    alt="Valid CSS!" />
+            </a>
+            <a
+                href="https://wave.webaim.org/report#/https://webpages.charlotte.edu/nhayes12/itis3135/hobby/index.html"
+                id="wcag_validator">
+                <img
+                    style="border: 0; width: 88px; height: 31px"
+                    src="images/button_validation_wcag.png" alt="WCAG" />
+            </footer>
+            <script>
         // JavaScript to toggle section visibility
         document.addEventListener("DOMContentLoaded", function() {
     // Show the first section by default
@@ -397,20 +403,15 @@ main section:not(:first-child) {
     });
 });
     </script>
-     <script>
-        function toggleCSS() {
-            document.body.classList.toggle("disable-css");
-        }
-    </script>
-                                <script src="script.js"></script>
-                                <p id="footer">
-                                    Designed by: <a
-                                        href="hayesdesigns.com/index.html">Hayes
-                                        Designs</a>,
-                                    <a
-                                        href="https://www.freecodecamp.org/certification/NathanielHayes/responsive-web-design">Certified
-                                        in RWD</a>
-                                    © 2024<br />
-                                </p>
-                            </body>
-                        </html>
+            <script src="script.js"></script>
+            <p id="footer">
+                Designed by: <a
+                    href="hayesdesigns.com/index.html">Hayes
+                    Designs</a>,
+                <a
+                    href="https://www.freecodecamp.org/certification/NathanielHayes/responsive-web-design">Certified
+                    in RWD</a>
+                © 2024<br />
+            </p>
+        </body>
+    </html>
