@@ -34,6 +34,12 @@
           "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href
         );
       }
+      if (validationLinkDisability) {
+        validationLinkCss.setAttribute(
+          "href",
+          "https://wave.webaim.org/report#/?uri=" + location.href
+        );
+      }
     </script>
     <script src="scripts/HTMLInclude.min.js"></script>
   </body>
