@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Statements</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <div id="headerPlaceholder" data-header="components/header.html"></div>
+    </header>
+
+    <main>
+        <h2>Switch Statements</h2>
+        <!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="images/switch1.PNG" style="width:100% height: 100%">
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="images/switch2.PNG" style="width:100% height: 100%">
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="images/switch3.PNG" style="width:100% height: 100%">
+      </div>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <p>The first slide shows an empty if/else statement. The second slide shows an example of a completed if/else statement that checks whether x is greater than 1.</p>
+  </div>
+    
+            <div class="lesson">
+                <p>In programming, if/else statements are decision points in code. When it comes to an if/else statement there is an initial condition. If the first condition is true then it executes some code.
+                     If the first condition is false, then the program will skip the if block and continue in the else block of code. Think of it like this: If it's raining, bring an umbrella; else, leave it at home. </p>
+                <br>
+                <!-- Add more content as needed -->
+                
+                <br>
+                <!-- Add questions here -->
+                <div class="questions">
+                    <h4>Quiz</h3>
+                    <p>Add space in condition ex. (x > 0) not (x>0).</p>
+                    <ol>
+                        <li>
+                            <p>Create an if/else statement that checks if x is less than 0. Leave body empty (Look at first slide).</p>
+                            <input type="text" id="q1_answer">
+                        </li>
+                        <li>
+                            <p>Create an if/else statement that checks if x is greater than or equal to 10. Leave body empty (Look at first slide). Hint: greater than or equal symbol in java is >=. </p>
+                            <input type="text" id="q2_answer">
+                        </li>
+                        <li>
+                            <p>Create an if else statement that checks if raining is true. Leave body empty (Look at first slide)."</p>
+                            <input type="text" id="q3_answer">
+                        </li>
+                        <!-- Add more questions -->
+                    </ol>
+                    <button onclick="checkAnswers()">Submit</button>
+                </div>
+            </div>
+        </div>
+        <h5>Switch statements</h5>
+        <div class="slideshow-container2">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade2">
+              <div class="numbertext">1 / 3</div>
+              <img src="images/switch1.PNG" style="width:100% height: 100%">
+            </div>
+          
+            <div class="mySlides fade2">
+              <div class="numbertext">2 / 3</div>
+              <img src="images/switch2.PNG" style="width:100% height: 100%">
+            </div>
+          </div>
+          <br>
+          
+          <!-- The dots/circles -->
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <p>The first slide shows an empty if/else statement. The second slide shows an example of a completed if/else statement that checks whether x is greater than 1.</p>
+          </div>
+    </main>
+    
+
+    <footer>
+        <div id="footerPlaceholder" data-footer="components/footer.html"></div>
+    </footer>
+    <script>
+        function checkAnswers() {
+    // Define an array of correct answers for each question
+    var correctAnswers = [
+    "if(x < 0){}else{}", "if(x >= 10){}else{}", "if(raining = true){}else{}"
+        // Add more correct answers for additional questions as needed
+    ];
+
+    // Get the user's answers from the input fields
+    var userAnswers = [
+        document.getElementById('q1_answer').value.trim(), 
+        document.getElementById('q2_answer').value.trim(),  
+        document.getElementById('q3_answer').value.trim(), // User's answer for question 1
+        // Get user's answers for additional questions as needed
+    ];
+
+    // Check each user answer against the corresponding correct answer
+    for (var i = 0; i < correctAnswers.length; i++) {
+        if (userAnswers[i] === correctAnswers[i]) {
+            // If the answer is correct, display a success message for that question
+            alert("Question " + (i + 1) + ": Correct! Well done.");
+        } else {
+            // If the answer is incorrect, display a feedback message for that question
+            alert("Question " + (i + 1) + ": Incorrect. Please try again.");
+        }
+    }
+}
+    </script>
+    <script src="scripts/header_loader.js"></script>
+    <script src="scripts/footer_loader.js"></script>
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>

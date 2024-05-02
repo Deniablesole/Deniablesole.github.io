@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables and DataTypes</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <div id="headerPlaceholder" data-header="components/header.html"></div>
+    </header>
+
+    <main>
+        <h2>Variables and DataTypes</h2>
+        <!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="images/var1.png" style="width:100% height: 100%">
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="images/var2.png" style="width:100% height: 100%">
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+  </div>
+            <div class="lesson">
+                <p>In programming, variables are used to store data that can be referenced and manipulated throughout the program. Each variable has a data type, which defines the type of data it can store.</p>
+                <br>
+                <p>Common data types in Java include:</p>
+                <br>
+                <ul>
+                    <li>int: Integers are used for storing integers (whole numbers 0-9).</li>
+                    <li>double: Doubles are used for storing floating-point/decimal numbers (0.1, 1.2).</li>
+                    <li>char: Characters are used for storing single characters ('A', 'B', 'C').</li>
+                    <li>float: Floats are used for storing positive and negative numbers with a decimal point (5.5, 0.25, -103.342).</li>
+                    <li>boolean: Booleans are used for storing true or false values.</li>
+                    <br>
+                </ul>
+                <img src="images/var3.PNG">
+                <p>Above are some code samples in java creating an integer, double, character, and float variables.</p>
+                <!-- Add more content as needed -->
+                
+                <br>
+                <!-- Add questions here -->
+                <div class="questions">
+                    <h3>Quiz</h3>
+                    <ol>
+                        <li>
+                            <p>Create a variable named x that is an integer and has a value of 3.</p>
+                            <input type="text" id="q1_answer">
+                        </li>
+                        <li>
+                            <p>Create a variable named change that is a double and has a value of 5.07</p>
+                            <input type="text" id="q2_answer">
+                        </li>
+                        <li>
+                            <p>Create a variable named grade that is a character and has a value of A.</p>
+                            <input type="text" id="q3_answer">
+                        </li>
+                        <!-- Add more questions -->
+                    </ol>
+                    <button onclick="checkAnswers()">Submit</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+
+    <footer>
+        <div id="footerPlaceholder" data-footer="components/footer.html"></div>
+    </footer>
+    <script>
+        function checkAnswers() {
+    // Define an array of correct answers for each question
+    var correctAnswers = [
+        "int x = 3;", "double change = 5.07;", "char grade = 'A';"
+        // Add more correct answers for additional questions as needed
+    ];
+
+    // Get the user's answers from the input fields
+    var userAnswers = [
+        document.getElementById('q1_answer').value.trim(), 
+        document.getElementById('q2_answer').value.trim(),  
+        document.getElementById('q3_answer').value.trim(), // User's answer for question 1
+        // Get user's answers for additional questions as needed
+    ];
+
+    // Check each user answer against the corresponding correct answer
+    for (var i = 0; i < correctAnswers.length; i++) {
+        if (userAnswers[i] === correctAnswers[i]) {
+            // If the answer is correct, display a success message for that question
+            alert("Question " + (i + 1) + ": Correct! Well done.");
+        } else {
+            // If the answer is incorrect, display a feedback message for that question
+            alert("Question " + (i + 1) + ": Incorrect. Please try again.");
+        }
+    }
+}
+    </script>
+    <script src="scripts/header_loader.js"></script>
+    <script src="scripts/footer_loader.js"></script>
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>
