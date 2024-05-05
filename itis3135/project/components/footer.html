@@ -35,7 +35,7 @@
             "href",
             "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href
           );
-          document.getElementById("validation_link_disability").setAttribute("href","https://wave.webaim.org/report#/" + location.href);
+          document.getElementById("validation_link_disability").href = "https://wave.webaim.org/report#/" + encodeURIComponent(window.location.href);
       </script>
 <div class="container">
     <p>&copy; 2024 Hayes Designs. All rights reserved.</p>
