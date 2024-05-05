@@ -1,4 +1,5 @@
 * {
+    justify-content: center;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -175,6 +176,7 @@ nav ul li a:hover {
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
+  
 }
 
 .active, .dot:hover {
@@ -209,4 +211,39 @@ p{
     margin: 0 auto; /* This will center the lesson div horizontally */
     max-width: 1100px; /* Adjust the maximum width as needed */
     padding: 20px; 
+    text-align: center;
+}
+
+h2{
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 10px;
+}
+
+footer {
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+}
+
+#dot{
+  text-align: center;
+}
+
+#image {
+  display: block; /* Make the image a block element */
+  margin: 0 auto; /* Center the image horizontally */
+}
+
+.questions {
+  text-align: center; /* Center-align the content */
+}
+
+.questions p {
+  /* Additional styling for the paragraphs */
+  margin: 10px 0; /* Add margin to separate paragraphs */
+}
+
+.divider {
+  border-top: 5px solid black; /* Solid black border */
+  margin: 20px 0; /* Margin to separate content */
 }

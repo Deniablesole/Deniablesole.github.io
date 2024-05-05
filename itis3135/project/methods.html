@@ -12,16 +12,96 @@
     </header>
 
     <main>
-        <div class="container">
-            <h2>Methods</h2>
-            <p>Content for module here.</p>
-        </div>
+        <h2>Methods</h2>
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="images/method1.PNG" alt="code example">
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="images/method2.PNG" alt="code example">
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="images/method3.PNG" alt="code example">
+              </div>
+          </div>
+          <br>
+          <!-- The dots/circles -->
+          <div>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <p>Above on the first slide is an empty java method. The second slide has a method called calculateSum that adds together two numbers and returns the sum. The third slide has
+                a method called greeting which when called will output the text "Welcome to the grocery store!".
+            </p>
+          </div>
+            <div class="lesson">
+                <p>A method is a block of code that is only ran when the method is called. A method takes in one or multiple parameters and are used to perform a certain action. Methods are also referred to as functions.
+                    If you find yourself writing code for the same function multiple times, you can create a method to do that task, and then call the method instead of writing the same code again.
+                    Methods must be declared within a class and can only be used within that class unless there is some sort of encapsulation, but that is for another time.
+                </p>
+                <!-- Add questions here -->
+                <div class="divider"></div>
+                <div class="questions">
+                    <h3>Quiz</h3>
+                    <ol>
+                        <li>
+                            <p>Create a method that is public, void, named "testMethod", has a parameter that is an integer variable named x. In the method body return x.</p>
+                            <input type="text" id="q1_answer">
+                        </li>
+                        <li>
+                            <p>What is the call for the method above?</p><img src="images/methodquiz1.PNG" alt="code example">
+                            <br>
+                            <input type="text" id="q2_answer">
+                        </li>
+                        <li>
+                            <p>What is the final output for this program?</p><img src="images/methodquiz2.PNG" alt="code example">
+                            <br>
+                            <input type="text" id="q3_answer">
+                        </li>
+                        <!-- Add more questions -->
+                    </ol>
+                    <button type="submit" onclick="checkAnswers()">Submit</button>
+                </div>
+            </div>
     </main>
 
     <footer>
         <div id="footerPlaceholder" data-footer="components/footer.html"></div>
     </footer>
+    <script>
+        function checkAnswers() {
+    // Define an array of correct answers for each question
+    var correctAnswers = [
+        "public void testMethod(int x){return x;}", "testMethod();", "$3.01"
+        // Add more correct answers for additional questions as needed
+    ];
 
+    // Get the user's answers from the input fields
+    var userAnswers = [
+        document.getElementById('q1_answer').value.trim(), 
+        document.getElementById('q2_answer').value.trim(),  
+        document.getElementById('q3_answer').value.trim(), // User's answer for question 1
+        // Get user's answers for additional questions as needed
+    ];
+
+    // Check each user answer against the corresponding correct answer
+    for (var i = 0; i < correctAnswers.length; i++) {
+        if (userAnswers[i] === correctAnswers[i]) {
+            // If the answer is correct, display a success message for that question
+            alert("Question " + (i + 1) + ": Correct! Well done.");
+        } else {
+            // If the answer is incorrect, display a feedback message for that question
+            alert("Question " + (i + 1) + ": Incorrect. Please try again.");
+        }
+    }
+}
+    </script>
     <script src="scripts/header_loader.js"></script>
     <script src="scripts/footer_loader.js"></script>
     <script src="scripts/scripts.js"></script>
