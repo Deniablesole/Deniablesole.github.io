@@ -1,128 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loops</title>
-    <link rel="stylesheet" href="styles/styles.css">
-</head>
-<body>
-    <header>
-        <div id="headerPlaceholder" data-header="components/header.html"></div>
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Loops</title>
+        <link rel="stylesheet" href="styles/styles.css">
+    </head>
+    <body>
+        <header>
+            <div id="headerPlaceholder"
+                data-header="components/header.html"></div>
+        </header>
 
-    <main>
-        <h2>Loops</h2>
-        <!-- Slideshow container -->
-        <div class="slideshow-container">
+        <main>
+            <h2>Loops</h2>
 
-            <!-- Full-width images with number and caption text -->
-            <div class="mySlides fade">
-              <div class="numbertext">1 / 3</div>
-              <img src="images/loops1.PNG" alt="code example">
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="images/loops1.PNG" alt="code example">
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="images/loops2.PNG" alt="code example">
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="images/loops3.PNG" alt="code example">
+                </div>
             </div>
-            <div class="mySlides fade">
-              <div class="numbertext">2 / 3</div>
-              <img src="images/loops2.PNG" alt="code example">
+            <br>
+
+            <div id="dot">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <p>Above are examples of empty for, while, and do-while loops.
+                </p>
             </div>
-            <div class="mySlides fade">
-                <div class="numbertext">2 / 3</div>
-                <img src="images/loops3.PNG" alt="code example">
-              </div>
-          </div>
-          <br>
-          <!-- The dots/circles -->
-          <div  id="dot">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <p>Above are examples of empty for, while, and do-while loops.
-            </p>
-          </div>
             <div class="lesson">
-                <p>Loops allow us to repeat the same code/action multiple times while a condition evaluates to true. The three types of java loops are the for loop, while loop, and do-while loop.
-                    A common mistake that can happen when working is loops is you get an infinite loop. An infinite loop is a loop that will repeat infinitly because the loop will never evaluate to false.
+                <p>Loops allow us to repeat the same code/action multiple times
+                    while a condition evaluates to true. The three types of java
+                    loops are the for loop, while loop, and do-while loop.
+                    A common mistake that can happen when working is loops is
+                    you get an infinite loop. An infinite loop is a loop that
+                    will repeat infinitly because the loop will never evaluate
+                    to false.
                 </p>
                 <h3>For Loops</h3>
                 <br>
                 <img src="images/loops4.PNG" alt="code example">
-                <p>In the above for loop we initialize i to be 0. Since we want the loop to run 5 times we put i &lt;= 4. We then increment i by 1 so that it counts as the loop running 1 time.
-                The result of the loop is that it prints to the console the value of i.
+                <p>In the above for loop we initialize i to be 0. Since we want
+                    the loop to run 5 times we put i &lt;= 4. We then increment
+                    i by 1 so that it counts as the loop running 1 time.
+                    The result of the loop is that it prints to the console the
+                    value of i.
                 </p>
                 <br>
                 <h4>While Loops</h4>
                 <br>
                 <img src="images/loops5.PNG" alt="code example">
-                <p>This is a while loop that does the same action as the for loop above. When using a while loop you must initialize i outside of the loop. I want the loop to run 5 times so
-                    we have i &lt;=5. The loop then prints the value of i, then increments i to count as a single run through the loop.
+                <p>This is a while loop that does the same action as the for
+                    loop above. When using a while loop you must initialize i
+                    outside of the loop. I want the loop to run 5 times so
+                    we have i &lt;=5. The loop then prints the value of i, then
+                    increments i to count as a single run through the loop.
                 </p>
                 <h5>Do-While Loops</h5>
                 <br>
                 <img src="images/loops6.PNG" alt="code example">
-                <p>This is a do-while loop that has the same output as the while loop above. You still have to initialize i outisde of the loop same as the while loop.
-                    This loop prints the value of i, then increments i's value by 1. The loop continues to do this until i = 6. when i = 6, the condition is now false and the program will
+                <p>This is a do-while loop that has the same output as the while
+                    loop above. You still have to initialize i outisde of the
+                    loop same as the while loop.
+                    This loop prints the value of i, then increments i's value
+                    by 1. The loop continues to do this until i = 6. when i = 6,
+                    the condition is now false and the program will
                     break out of the loop.
                 </p>
-                <!-- Add questions here -->
+
                 <div class="divider"></div>
                 <div class="questions">
                     <h3>Quiz</h3>
                     <ol>
                         <li>
-                            <p>Create a for loop that prints the value of i 10 times. You must initialize i to 0 and you must only use the &lt; sign.</p>
-                            <p>Format: for(int i = 0; i &lt; 5; i++){System.out.println(i);}</p>
+                            <p>Create a for loop that prints the value of i 10
+                                times. You must initialize i to 0 and you must
+                                only use the &lt; sign.</p>
+                            <p>Format: for(int i = 0; i &lt; 5;
+                                i++){System.out.println(i);}</p>
                             <input type="text" id="q1_answer">
                         </li>
                         <li>
-                            <p>Create a while loop that prints the value of i 12 times. You must initialize i to 0 and you must only use the &lt; sign.</p>
-                            <p>Format: int i = 0; while(i &lt; 5){System.out.println(i); i++;}</p>
+                            <p>Create a while loop that prints the value of i 12
+                                times. You must initialize i to 0 and you must
+                                only use the &lt; sign.</p>
+                            <p>Format: int i = 0; while(i &lt;
+                                5){System.out.println(i); i++;}</p>
                             <input type="text" id="q2_answer">
                         </li>
                         <li>
-                            <p>Create a do-while loop that prints the value of i 7 times.</p>
-                            <p>Format: int i = 0; do{System.out.println(i); i++;}while(i &lt; 5);</p>
+                            <p>Create a do-while loop that prints the value of i
+                                7 times.</p>
+                            <p>Format: int i = 0; do{System.out.println(i);
+                                i++;}while(i &lt; 5);</p>
                             <input type="text" id="q3_answer">
                         </li>
-                        <!-- Add more questions -->
+
                     </ol>
                     <br>
-                    <button type="submit" onclick="checkAnswers()">Submit</button>
+                    <button type="submit"
+                        onclick="checkAnswers()">Submit</button>
                 </div>
             </div>
-    </main>
-    <footer>
-        <div id="footerPlaceholder" data-footer="components/footer.html"></div>
-    </footer>
-    <script>
+        </main>
+        <footer>
+            <div id="footerPlaceholder"
+                data-footer="components/footer.html"></div>
+        </footer>
+        <script>
         function checkAnswers() {
-    // Define an array of correct answers for each question
+    
     var correctAnswers = [
         "for(int i = 0; i < 10; i++){System.out.println(i);}", "int i = 0; while(i < 12){System.out.println(i); i++;}", "int i = 0; do{System.out.println(i); i++;}while(i < 7);"
-        // Add more correct answers for additional questions as needed
+        
     ];
 
-    // Get the user's answers from the input fields
+   
     var userAnswers = [
         document.getElementById('q1_answer').value.trim(), 
         document.getElementById('q2_answer').value.trim(),  
-        document.getElementById('q3_answer').value.trim(), // User's answer for question 1
-        // Get user's answers for additional questions as needed
+        document.getElementById('q3_answer').value.trim(), 
     ];
 
-    // Check each user answer against the corresponding correct answer
+   
     for (var i = 0; i < correctAnswers.length; i++) {
         if (userAnswers[i] === correctAnswers[i]) {
-            // If the answer is correct, display a success message for that question
+            
             alert("Question " + (i + 1) + ": Correct! Well done.");
         } else {
-            // If the answer is incorrect, display a feedback message for that question
+           
             alert("Question " + (i + 1) + ": Incorrect. Please try again.");
         }
     }
 }
     </script>
-    <script src="scripts/header_loader.js"></script>
-    <script src="scripts/footer_loader.js"></script>
-    <script src="scripts/scripts.js"></script>
-</body>
+        <script src="scripts/header_loader.js"></script>
+        <script src="scripts/footer_loader.js"></script>
+        <script src="scripts/scripts.js"></script>
+    </body>
 </html>

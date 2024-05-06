@@ -1,112 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Switch Statements</title>
-    <link rel="stylesheet" href="styles/styles.css">
-</head>
-<body>
-    <header>
-        <div id="headerPlaceholder" data-header="components/header.html"></div>
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Switch Statements</title>
+        <link rel="stylesheet" href="styles/styles.css">
+    </head>
+    <body>
+        <header>
+            <div id="headerPlaceholder"
+                data-header="components/header.html"></div>
+        </header>
 
-    <main>
-        <h2>Switch Statements</h2>
-        <!-- Slideshow container -->
-<div class="slideshow-container">
+        <main>
+            <h2>Switch Statements</h2>
 
-    <!-- Full-width images with number and caption text -->
-    <div class="mySlides fade">
-      <div class="numbertext">1 / 3</div>
-      <img src="images/switch1.PNG" alt="Switch statement code">
-    </div>
-    <div class="mySlides fade">
-      <div class="numbertext">2 / 3</div>
-      <img src="images/switch2.PNG" alt="Example of switch statement">
-    </div>
+            <div class="slideshow-container">
 
-    <div class="mySlides fade">
-        <div class="numbertext">2 / 3</div>
-        <img src="images/switch3.PNG" alt="Example of switch statement">
-      </div>
-  </div>
-  <br>
-  <!-- The dots/circles -->
-  <div  id="dot">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-    <p>Above are some java code samples using switch statements.</p>
-  </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="images/switch1.PNG" alt="Switch statement code">
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="images/switch2.PNG"
+                        alt="Example of switch statement">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="images/switch3.PNG"
+                        alt="Example of switch statement">
+                </div>
+            </div>
+            <br>
+
+            <div id="dot">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <p>Above are some java code samples using switch statements.</p>
+            </div>
             <div class="lesson">
-                <p>Instead of writing many if/else statements, you can use a switch statement. The switch statement will allow a certain block of code to be executed if there is a match with the case.
-                     If there is no match to a case the default case will be executed if the default case has been incuded.
-                     After executing the code within a case the break keyword is used to stop the execution of more code and case testing.</p>
+                <p>Instead of writing many if/else statements, you can use a
+                    switch statement. The switch statement will allow a certain
+                    block of code to be executed if there is a match with the
+                    case.
+                    If there is no match to a case the default case will be
+                    executed if the default case has been incuded.
+                    After executing the code within a case the break keyword is
+                    used to stop the execution of more code and case
+                    testing.</p>
                 <br>
-                <!-- Add more content as needed -->
+
                 <br>
-                <!-- Add questions here -->
+
                 <div class="divider"></div>
                 <div class="questions">
                     <h3>Quiz</h3>
                     <p>Add space in condition ex. (x &gt; 0) not (x&gt;0).</p>
                     <ol>
                         <li>
-                            <img src="images/switchquiz1.PNG" alt="code example">
-                            <p>What will the output be for this program if caseChoice equals 2?</p>
+                            <img src="images/switchquiz1.PNG"
+                                alt="code example">
+                            <p>What will the output be for this program if
+                                caseChoice equals 2?</p>
                             <input type="text" id="q1_answer">
                         </li>
                         <li>
-                            <img src="images/switchquiz1.PNG" alt="code example">
-                            <p>What will the output be for this program if caseChoice equals 10? </p>
+                            <img src="images/switchquiz1.PNG"
+                                alt="code example">
+                            <p>What will the output be for this program if
+                                caseChoice equals 10? </p>
                             <input type="text" id="q2_answer">
                             <br>
                         </li>
                         <li>
-                            <img src="images/switchquiz2.PNG" alt="code example">
-                            <p>What will the output be for this program if caseChoice equals 4.</p>
+                            <img src="images/switchquiz2.PNG"
+                                alt="code example">
+                            <p>What will the output be for this program if
+                                caseChoice equals 4.</p>
                             <input type="text" id="q3_answer">
                         </li>
-                        <!-- Add more questions -->
+
                     </ol>
-                    <button type="submit" onclick="checkAnswers()">Submit</button>
+                    <button type="submit"
+                        onclick="checkAnswers()">Submit</button>
                 </div>
             </div>
-    </main>
-    <footer>
-        <div id="footerPlaceholder" data-footer="components/footer.html"></div>
-    </footer>
-    <script>
+        </main>
+        <footer>
+            <div id="footerPlaceholder"
+                data-footer="components/footer.html"></div>
+        </footer>
+        <script>
         function checkAnswers() {
-    // Define an array of correct answers for each question
+    
     var correctAnswers = [
     "This is case 2.", "This is the default choice.", "24"
-        // Add more correct answers for additional questions as needed
+       
     ];
 
-    // Get the user's answers from the input fields
+   
     var userAnswers = [
         document.getElementById('q1_answer').value.trim(), 
         document.getElementById('q2_answer').value.trim(),  
-        document.getElementById('q3_answer').value.trim(), // User's answer for question 1
-        // Get user's answers for additional questions as needed
+        document.getElementById('q3_answer').value.trim(), 
     ];
 
-    // Check each user answer against the corresponding correct answer
+    
     for (var i = 0; i < correctAnswers.length; i++) {
         if (userAnswers[i] === correctAnswers[i]) {
-            // If the answer is correct, display a success message for that question
+           
             alert("Question " + (i + 1) + ": Correct! Well done.");
         } else {
-            // If the answer is incorrect, display a feedback message for that question
+           
             alert("Question " + (i + 1) + ": Incorrect. Please try again.");
         }
     }
 }
     </script>
-    <script src="scripts/header_loader.js"></script>
-    <script src="scripts/footer_loader.js"></script>
-    <script src="scripts/scripts.js"></script>
-</body>
+        <script src="scripts/header_loader.js"></script>
+        <script src="scripts/footer_loader.js"></script>
+        <script src="scripts/scripts.js"></script>
+    </body>
 </html>

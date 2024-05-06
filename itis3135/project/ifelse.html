@@ -1,101 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>If/Else Statements</title>
-    <link rel="stylesheet" href="styles/styles.css">
-</head>
-<body>
-    <header>
-        <div id="headerPlaceholder" data-header="components/header.html"></div>
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>If/Else Statements</title>
+        <link rel="stylesheet" href="styles/styles.css">
+    </head>
+    <body>
+        <header>
+            <div id="headerPlaceholder"
+                data-header="components/header.html"></div>
+        </header>
 
-    <main>
-        <h2>If/Else Statements</h2>
-        <!-- Slideshow container -->
-<div class="slideshow-container">
+        <main>
+            <h2>If/Else Statements</h2>
 
-    <!-- Full-width images with number and caption text -->
-    <div class="mySlides fade">
-      <div class="numbertext">1 / 3</div>
-      <img src="images/ifelse3.PNG" alt="code example">
-    </div>
-    <div class="mySlides fade">
-      <div class="numbertext">2 / 3</div>
-      <img src="images/ifelse4.PNG" alt="code example">
-    </div>
-  </div>
-  <br>
-  <!-- The dots/circles -->
-  <div  id="dot">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <p>The first slide shows </p>
-  </div>
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="images/ifelse3.PNG" alt="code example">
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="images/ifelse4.PNG" alt="code example">
+                </div>
+            </div>
+            <br>
+
+            <div id="dot">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <p>The first slide shows </p>
+            </div>
             <div class="lesson">
-                <p>In programming, if/else statements are decision points in code. When it comes to an if/else statement there is an initial condition. If the first condition is true then it executes some code.
-                     If the first condition is false, then the program will skip the if block and continue in the else block of code. Think of it like this: If it's raining, bring an umbrella; else, leave it at home. </p>
+                <p>In programming, if/else statements are decision points in
+                    code. When it comes to an if/else statement there is an
+                    initial condition. If the first condition is true then it
+                    executes some code.
+                    If the first condition is false, then the program will skip
+                    the if block and continue in the else block of code. Think
+                    of it like this: If it's raining, bring an umbrella; else,
+                    leave it at home. </p>
                 <br>
-                <!-- Add more content as needed -->
+
                 <br>
-                <!-- Add questions here -->
+
                 <div class="divider"></div>
                 <div class="questions">
                     <h3>Quiz</h3>
                     <p>Add space in condition ex. (x &gt; 0) not (x&gt;0).</p>
                     <ol>
                         <li>
-                            <p>Create an if/else statement that checks if x is less than 0. Leave body empty (Look at first slide).</p>
+                            <p>Create an if/else statement that checks if x is
+                                less than 0. Leave body empty (Look at first
+                                slide).</p>
                             <input type="text" id="q1_answer">
                         </li>
                         <li>
-                            <p>Create an if/else statement that checks if x is greater than or equal to 10. Leave body empty (Look at first slide). Hint: greater than or equal symbol in java is >=. </p>
+                            <p>Create an if/else statement that checks if x is
+                                greater than or equal to 10. Leave body empty
+                                (Look at first slide). Hint: greater than or
+                                equal symbol in java is >=. </p>
                             <input type="text" id="q2_answer">
                         </li>
                         <li>
-                            <p>Create an if else statement that checks if raining is true. Leave body empty (Look at first slide)."</p>
+                            <p>Create an if else statement that checks if
+                                raining is true. Leave body empty (Look at first
+                                slide)."</p>
                             <input type="text" id="q3_answer">
                         </li>
-                        <!-- Add more questions -->
+
                     </ol>
-                    <button type="submit" onclick="checkAnswers()">Submit</button>
+                    <button type="submit"
+                        onclick="checkAnswers()">Submit</button>
                 </div>
             </div>
-    </main>
-    <footer>
-        <div id="footerPlaceholder" data-footer="components/footer.html"></div>
-    </footer>
-    <script>
+        </main>
+        <footer>
+            <div id="footerPlaceholder"
+                data-footer="components/footer.html"></div>
+        </footer>
+        <script>
         function checkAnswers() {
-    // Define an array of correct answers for each question
+    
     var correctAnswers = [
     "if(x < 0){}else{}", "if(x >= 10){}else{}", "if(raining = true){}else{}"
-        // Add more correct answers for additional questions as needed
+       
     ];
 
-    // Get the user's answers from the input fields
+    
     var userAnswers = [
         document.getElementById('q1_answer').value.trim(), 
         document.getElementById('q2_answer').value.trim(),  
-        document.getElementById('q3_answer').value.trim(), // User's answer for question 1
-        // Get user's answers for additional questions as needed
+        document.getElementById('q3_answer').value.trim(), 
     ];
 
-    // Check each user answer against the corresponding correct answer
+    
     for (var i = 0; i < correctAnswers.length; i++) {
         if (userAnswers[i] === correctAnswers[i]) {
-            // If the answer is correct, display a success message for that question
+           
             alert("Question " + (i + 1) + ": Correct! Well done.");
         } else {
-            // If the answer is incorrect, display a feedback message for that question
+            
             alert("Question " + (i + 1) + ": Incorrect. Please try again.");
         }
     }
 }
     </script>
-    <script src="scripts/header_loader.js"></script>
-    <script src="scripts/footer_loader.js"></script>
-    <script src="scripts/scripts.js"></script>
-</body>
+        <script src="scripts/header_loader.js"></script>
+        <script src="scripts/footer_loader.js"></script>
+        <script src="scripts/scripts.js"></script>
+    </body>
 </html>
